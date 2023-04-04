@@ -1,0 +1,12 @@
+<?php
+ session_start();
+if(isset($_SESSION['loggedin']))
+{
+	session_destroy();
+	header("location:Login.php");
+}
+else
+{
+	header("location:Login.php");
+}
+?>
